@@ -1,0 +1,217 @@
+* {
+  font-family: "Pretendard Variable", pretendard, system-ui, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html {
+    background-color: #000000; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+    width: 1080px;
+    height: 1980px;
+    font-family: 'Pretendard', sans-serif;
+    position: relative;
+}
+.container {
+    position: relative;
+    width: 1080px;
+    height: 1980px;
+}
+.Navi {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1080px;
+    height: 237px;
+    background: #1E1E1E;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.SonyLogo {
+    position: absolute;
+    top: 49px;
+    left: 444px;
+    width: 193px;
+    height: 34px;
+}
+.Home {
+    position: absolute;
+    top: 37px;
+    left: 947px;
+    width: 74px;
+    height: 75px;
+}
+.button1 {
+    position: absolute;
+    top: 141px;
+    left: 15px;
+    width: 254px;
+    height: 76px;
+    background: #FFFFFF;
+    border-radius: 30px;
+}
+.Text1 {
+    position: absolute;
+    top: 348px;
+    left: 91px;
+    font-size: 56px;
+    font-weight: bold;
+    color: #000000;
+}
+.Text2 {
+    position: absolute;
+    top: 526px;
+    left: 106px;
+    width: 818px;
+    height: 98px;
+    font-size: 35px;
+    color: #000000;
+    line-height: 140%;
+}
+.img1, .img2, .img3 {
+    position: absolute;
+    width: 903px;
+    height: 381px;
+    border-radius: 49px;
+}
+.img1 { top: 678px; left: 89px; }
+.img2 { top: 1083px; left: 91px; }
+.img3 { top: 1496px; left: 91px; }
+
+.Text3, .Text4, .Text5 {
+    position: absolute;
+    font-size: 43px;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 140%;
+}
+.Text3 { top: 700px; left: 158px; }
+.Text4 { top: 1103px; left: 158px; }
+.Text5 { top: 1516px; left: 158px; }
+
+.Desc1, .Desc2, .Desc3 {
+    position: absolute;
+    font-size: 32px;
+    color: #FFFFFF;   
+    line-height: 140%;
+    width: 429px;
+}
+.Desc1 { top: 849px; left: 158px; }
+.Desc2 { top: 1261px; left: 146px; }
+.Desc3 { top: 1671px; left: 158px; }
+
+.Morebutton1, .Morebutton2, .Morebutton3 {
+    position: absolute;
+    width: 299px;
+    height: 86px;
+    background: #E94E09;
+    border-radius: 30px;
+}
+.Morebutton1 { top: 912px; left: 660px; }
+.Morebutton2 { top: 1326px; left: 660px; }
+.Morebutton3 { top: 1741px; left: 660px; }
+
+.Text8, .Text9a, .Text9b {
+    position: absolute;
+    font-size: 43px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.Text8 { top: 885px; left: 711px; }
+.Text9a { top: 1299px; left: 711px; }
+.Text9b { top: 1714px; left: 711px; }
+
+.Text10 {
+    position: absolute;
+    top: 120px;
+    left: 89px;
+    font-size: 35px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.Text11, .Text12, .Text13 {
+    position: absolute;
+    font-size: 35px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+.Text11 { top: 120px; left: 353px; }
+.Text12 { top: 120px; left: 638px; }
+.Text13 { top: 120px; left: 898px; }
+
+.Morebutton1:hover {
+  background-color: #c63f05;
+}
+
+.Morebutton2:hover {
+  background-color: #c63f05;
+}
+
+.Morebutton3:hover {
+  background-color: #c63f05;
+}
+
+.Text10 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.Text10:hover {
+  filter: brightness(50%);
+}
+
+.Text11 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.Text11:hover {
+  filter: brightness(50%);
+}
+
+.Text12 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.Text12:hover {
+  filter: brightness(50%);
+}
+
+.Text13 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.Text13:hover {
+  filter: brightness(50%);
+}
+
+.Home {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.Home:hover {
+  filter: brightness(50%);
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  width: 100%;
+  height: 1980px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1080px;
+  height: 1980px;
+  position: relative;
+}

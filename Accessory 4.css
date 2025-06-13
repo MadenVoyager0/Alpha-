@@ -1,0 +1,278 @@
+* {
+  font-family: "Pretendard Variable", pretendard, system-ui, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html {
+    background-color: #000000; 
+}
+
+.Navi {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1080px;
+    height: 237px;
+    background: #FFFFFF;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.SonyLogo {
+    position: absolute;
+    top: 49px;
+    left: 444px;
+    width: 193px;
+    height: 34px;
+}
+.Home {
+    position: absolute;
+    top: 37px;
+    left: 947px;
+    width: 74px;
+    height: 75px;
+}
+.button0 {
+    position: absolute;
+    top: 141px;
+    left: 846px;
+    width: 174px;
+    height: 76px;
+    background: #000000;
+    border-radius: 30px;
+}
+
+body {
+  margin: 0;
+  background-color: #1D1D1D;
+  width: 1080px;
+  height: 1980px;
+  font-family: 'Pretendard', sans-serif;
+  position: relative;
+  color: #FFFFFF;
+}
+
+.Main {
+  position: absolute;
+  left: 108px;
+  top: 315px;
+  width: 420px;
+  height: 429px;
+}
+
+.img1 { position: absolute; left: 114px; top: 990px; }
+.img2 { position: absolute; left: 405px; top: 990px; }
+.img3 { position: absolute; left: 697px; top: 990px; }
+.img4 { position: absolute; left: 405px; top: 1289px; }
+.img5 { position: absolute; left: 697px; top: 1289px; }
+.img6 { position: absolute; left: 114px; top: 1589px; }
+.img7 { position: absolute; left: 697px; top: 1466px; }
+
+.Text1 {
+  position: absolute;
+  left: 548px;
+  top: 315px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.Text2 {
+  position: absolute;
+  left: 548px;
+  top: 522px;
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.Text2a {
+  position: absolute;
+  left: 771px;
+  top: 522px;
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.Text2b {
+  position: absolute;
+  left: 548px;
+  top: 646px;
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.Text3 {
+  position: absolute;
+  left: 548px;
+  top: 572px;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.Text3a {
+  position: absolute;
+  left: 771px;
+  top: 572px;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.Text3b {
+  position: absolute;
+  left: 548px;
+  top: 694px;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.Text4 {
+  position: absolute;
+  left: 108px;
+  top: 797px;
+  width: 860px;
+  height: 129px;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.Text13 {
+    position: absolute;
+    top: 120px;
+    left: 872px;
+    font-size: 35px;
+    font-weight: 500;
+    z-index: 9999;
+    color: #FFFFFF
+}
+
+.Text10, .Text11, .Text12 {
+    position: absolute;
+    font-size: 35px;
+    color: #000000;
+    font-weight: 500;
+}
+.Text10 { top: 120px; left: 89px; }
+.Text11 { top: 120px; left: 345px; }
+.Text12 { top: 120px; left: 638px; }
+
+.Text10 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.Text10:hover {
+  filter: brightness(50%);
+}
+
+.Text11 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.Text11:hover {
+  filter: brightness(50%);
+}
+
+.Text12 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.Text12:hover {
+  filter: brightness(50%);
+}
+
+.Text13 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.Text13:hover {
+  filter: brightness(50%);
+}
+
+.Home {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.Home:hover {
+  filter: brightness(50%);
+}
+
+.img1 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.img1:hover {
+  filter: brightness(50%);
+}
+
+.img2 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.img2:hover {
+  filter: brightness(50%);
+}
+
+.img3 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.img3:hover {
+  filter: brightness(50%);
+}
+
+.img4 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.img4:hover {
+  filter: brightness(50%);
+}
+
+.img5 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.img5:hover {
+  filter: brightness(50%);
+}
+
+.img6 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.img6:hover {
+  filter: brightness(50%);
+}
+
+.img7 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.img7:hover {
+  filter: brightness(50%);
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  width: 100%;
+  height: 1980px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1080px;
+  height: 1980px;
+  position: relative;
+}

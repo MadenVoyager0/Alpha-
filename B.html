@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1980">
+    <title>Sony Alpha UI</title>
+    <link rel="stylesheet" href="B.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+</head>
+<body>
+  <div class="Navi"></div>
+  <img src="Lineup/sony.png" alt="Sony logo" class="SonyLogo">
+  <a href="Main.html">
+  <img src="Lineup/home.png" alt="Home" class="Home">
+  </a>
+  <div class="button0"></div>
+
+  <a href="Lineup.html">
+   <p class="Text10">라인업</p>
+  </a>
+  <a href="Interactive.html">
+   <p class="Text11">인터랙티브</p>
+  </a>
+  <a href="Tech.html">
+   <p class="Text12">핵심기술</p>
+  </a>
+  <a href="Accessory.html">
+  <p class="Text13">악세서리</p>
+  </a>
+
+  <div class="Main"><img src="B/A7.png" alt="Main Image" /></div>
+  <div class="logo"><img src="B/A7logo.png" alt="Logo" /></div>
+  <div class="S1"><img src="B/S1.png" alt="S1 Image" /></div>
+  <div class="S2"><img src="B/S2.png" alt="S2 Image" /></div>
+ <a href="A.html">
+  <div class="L"><img src="A/L.png" alt="L Image" /></div>
+ </a>
+ <a href="C.html">
+  <div class="R"><img src="A/R.png" alt="R Image" /></div>
+ </a>
+  <div class="Text">세밀한 디테일을 담다</div>
+
+  <div class="Text1">
+        α7R V는 61MP 고해상도, AI 기반 피사체 인식 AF, 8단 손떨림 <br />
+        보정으로 정밀한 촬영과 안정된 결과물을 제공합니다.
+  </div>
+
+  <div class="Text2">
+        해상도<br /><br />
+        연속 촬영 속도<br /><br />
+        AF/AE 계산<br /><br />
+        손떨림 보정
+  </div>
+
+  <div class="Text2a">
+        이미지 프로세서<br /><br />
+        손떨림 보정<br /><br />
+        영상 성능
+  </div>
+
+  <div class="Text3">
+        61.0MP<br /><br />
+        최대 10fps<br /><br />
+        AI 기반 피사체 인식 AF<br /><br />
+        최대 8스톱 (5축 보정)
+
+  </div>
+
+  <div class="Text3a">
+        BIONZ XR<br /><br />
+        최대 8.5스톱 (중앙 기준)<br /><br />        
+   </div>
+
+   <div class="Text3b">
+        8K 24p / 4K 60p<br />
+        10bit 4:2:2 <br /> 
+        S-Cinetone 지원<br />
+   </div>
+   
+</body>
+ <script>
+    let timeout;
+
+    function resetTimer() {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        window.location.href = 'index.html'; 
+      }, 15000); // 
+    }
+
+    ['mousemove', 'mousedown', 'keydown', 'touchstart'].forEach(evt => {
+      document.addEventListener(evt, resetTimer);
+    });
+
+    resetTimer();
+ </script>
+</html>

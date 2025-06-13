@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, initial-scale=1.0">
+    <title>Sony Alpha UI</title>
+    <link rel="stylesheet" href="Accessory 1.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+</head>
+<body>
+  <div class="Navi"></div>
+  <img src="Accessory/sony.png" alt="Sony logo" class="SonyLogo">
+  <a href="Main.html">
+  <img src="Lineup/home.png" alt="Home" class="Home">
+  </a>
+  <div class="button0"></div>
+
+  <a href="Lineup.html">
+   <p class="Text10">라인업</p>
+  </a>
+  <a href="Interactive.html">
+   <p class="Text11">인터랙티브</p>
+  </a>
+  <a href="Tech.html">
+   <p class="Text12">핵심기술</p>
+  </a>
+  <a href="Accessory.html">
+  <p class="Text13">악세서리</p>
+  </a>
+
+
+  <div class="Main"><img src="Accessory 1/2.png" alt="Main Image"></div>
+ <a href="Accessory 1.html">
+  <div class="img1"><img src="Accessory 1/1.png" alt="Image 1"></div>
+ </a>
+ <a href="Accessory.html">
+  <div class="img2"><img src="Accessory 1/2-1.png" alt="Image 2"></div>
+ </a>
+ <a href="Accessory 2.html">
+  <div class="img3"><img src="Accessory 1/3.png" alt="Image 3"></div>
+ </a>
+ <a href="Accessory 3.html">
+  <div class="img4"><img src="Accessory 1/4.png" alt="Image 4"></div>
+ </a>
+ <a href="Accessory 5.html">
+  <div class="img5"><img src="Accessory 1/5.png" alt="Image 5"></div>
+ </a>
+ <a href="Accessory 4.html">
+  <div class="img6"><img src="Accessory 1/6.png" alt="Image 6"></div>
+ </a>
+ <a href="Accessory 6.html">
+  <div class="img7"><img src="Accessory 1/7.png" alt="Image 7"></div>
+ </a>
+
+  <div class="Text1">ECM-L1 라발리에 마이크</div>
+  <div class="Text2">유형</div>
+  <div class="Text2a">지향성 </div>
+  <div class="Text2b">고유 노이즈</div>
+  <div class="Text3">콘덴서 마이크</div>
+  <div class="Text3a">전지향성</div>
+  <div class="Text3b">26.5dB SPL 이하</div>
+  <div class="Text4">
+  ECM-L1 라발리에 마이크는 플러그인 전원 호환성과 소니의 오랜 경험을 담은 오디오 기술을 결합하여 전문적인 사용에 필요한 탁월한 음질과 안정성을 선사합니다.
+  </div>
+</body>
+ <script>
+    let timeout;
+
+    function resetTimer() {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        window.location.href = 'index.html'; 
+      }, 15000); // 
+    }
+
+    ['mousemove', 'mousedown', 'keydown', 'touchstart'].forEach(evt => {
+      document.addEventListener(evt, resetTimer);
+    });
+
+    resetTimer();
+ </script>
+</html>

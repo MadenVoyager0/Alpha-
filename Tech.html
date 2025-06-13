@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1980">
+    <title>Sony Alpha UI</title>
+    <link rel="stylesheet" href="Tech.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+</head>
+<body>
+
+  <div class="Navi"></div>
+  <img src="Tech/sony.png" alt="Sony logo" class="SonyLogo">
+  <a href="Main.html">
+   <img src="Tech/home.png" alt="Home" class="Home">
+  </a>
+  <div class="button0"></div>
+        <a href="Lineup.html">
+         <p class="Text10">라인업</p>
+        </a>
+        <a href="Interactive.html">
+         <p class="Text11">인터랙티브</p>
+        </a>
+        <a href="Tech.html">
+         <p class="Text12">핵심기술</p>
+        </a>
+        <a href="Accessory.html">
+        <p class="Text13">악세서리</p>
+        </a>
+    <div class="container">
+        <img src="Tech/1.png" class="img img1" alt="1">
+        <img src="Tech/1-2.png" class="img img2" alt="2">
+        <img src="Tech/22.png" class="img img3" alt="3">
+        <img src="Tech/3.png" class="img img4" alt="4">
+        <img src="Tech/4.png" class="img img5" alt="5">
+        <img src="Tech/5.png" class="img img6" alt="6">
+        <img src="Tech/6.png" class="img img7" alt="7">
+        <img src="Tech/7.png" class="img img8" alt="8">
+
+        <div class="text text1">엑스모어</div>
+        <div class="text text2">연속 촬영 속도</div>
+        <div class="text text3">AI 기반 피사체 인식 AF</div>
+        <div class="text text4">손떨림 보정</div>
+        <div class="text text5">OLED 뷰파인더</div>
+
+        <div class="textA">기존 센서보다 더 많은 빛을 받아들이는 역조명 구조를 채택하고 고속 데이터 처리로 빠른 연속 촬영과 4K 영상 촬영에 최적화됨.</div>
+        <div class="textB">고속 이미지 프로세싱을 통해 초당 수십 장의 고속 연속 촬영. <br />움직임이 빠른 스포츠나 야생 촬영에 적합함.</div>
+        <div class="textC">AI 알고리즘으로 사람, 동물, 차량 등의 피사체를 정확하게 인식. <br />눈동자 추적(AF)도 가능하여빠르게 초점을 맞춰줌.</div>
+        <div class="textD">야간 촬영이나 망원 렌즈 사용 시에도 흔들림 없이 선명하게.<br />영상 촬영 시에도 자연스러운 흔들림 보정 효과 제공.</div>
+        <div class="textE">고해상도 OLED EVF로 선명하고 자연스러운 뷰를 제공함.<br />실시간으로 색상과 노출을 정확히 확인 가능함.</div>
+    </div>
+</body>
+  <script>
+    let timeout;
+
+    function resetTimer() {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        window.location.href = 'index.html'; 
+      }, 15000); // 
+    }
+
+    ['mousemove', 'mousedown', 'keydown', 'touchstart'].forEach(evt => {
+      document.addEventListener(evt, resetTimer);
+    });
+
+    resetTimer();
+
+    
+  </script>
+</html>

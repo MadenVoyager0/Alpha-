@@ -1,0 +1,219 @@
+* {
+  font-family: "Pretendard Variable", pretendard, system-ui, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html {
+    background-color: #FFFFFF; 
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 1080px;
+    height: 1980px;
+    position: relative;
+    font-family: 'Pretendard', sans-serif;
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
+.img {
+    position: absolute;
+}
+
+.img1 { left: 131px; top: 315px; }
+.img2 { left: 81px; top: 922px; }
+.img3 { left: 110px; top: 1238px; }
+.img4 { left: 110px; top: 2089px; }
+.img5 { left: 110px; top: 2900px; }
+.img6 { left: 110px; top: 3711px; }
+.img7 { left: 110px; top: 4531px; }
+.img8 { left: 575px; top: 4531px; }
+
+.text {
+    position: absolute;
+    font-weight: bold;
+    font-size: 50px;
+    color: #000;
+}
+
+.text1 { top: 902px; left: 561px; }
+.text2 { top: 1866px; left: 121px; }
+.text3 { top: 2684px; left: 121px; }
+.text4 { top: 3490px; left: 121px; }
+.text5 { top: 4304px; left: 121px; }
+
+.textA, .textB, .textC, .textD, .textE {
+    position: absolute;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 50px;
+    color: #000;
+}
+
+.textA { top: 980px; left: 561px; width: 405px; height: 235px; }
+.textB { top: 1936px; left: 121px; width: 844px; height: 118px; }
+.textC { top: 2763px; left: 121px; width: 790px; height: 100px; }
+.textD { top: 3567px; left: 121px; width: 737px; height: 100px; }
+.textE { top: 4385px; left: 121px; width: 719px; height: 100px; }
+
+.Navi {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1080px;
+    height: 237px;
+    background: #1E1E1E;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.SonyLogo {
+    position: absolute;
+    top: 49px;
+    left: 444px;
+    width: 193px;
+    height: 34px;
+}
+.Home {
+    position: absolute;
+    top: 37px;
+    left: 947px;
+    width: 74px;
+    height: 75px;
+}
+.button0 {
+    position: absolute;
+    top: 141px;
+    left: 572px;
+    width: 254px;
+    height: 76px;
+    background: #FFFFFF;
+    border-radius: 30px;
+}
+
+.Text12 {
+    position: absolute;
+    top: 120px;
+    left: 638px;
+    font-size: 35px;
+    font-weight: 500;
+    z-index: 9999;
+    color: #000000
+}
+
+.Text10, .Text11, .Text13 {
+    position: absolute;
+    font-size: 35px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+.Text10 { top: 120px; left: 89px; }
+.Text11 { top: 120px; left: 345px; }
+.Text13 { top: 120px; left: 898px; }body {
+  margin: 0;
+  background-color: #FFFFFF;
+  width: 1080px;
+  height: 1980px;
+  font-family: 'Pretendard', sans-serif;
+  position: relative;
+  color: #000000;
+}
+
+.Text10 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.Text10:hover {
+  filter: brightness(50%);
+}
+
+.Text11 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.Text11:hover {
+  filter: brightness(50%);
+}
+
+.Text12 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.Text12:hover {
+  filter: brightness(50%);
+}
+
+.Text13 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.Text13:hover {
+  filter: brightness(50%);
+}
+
+.Home {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.Home:hover {
+  filter: brightness(50%);
+}
+
+.container {
+  position: absolute;
+  top: 237px; 
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 237px); 
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 13px;  
+  height: 4px; 
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;  
+  border-radius: 3px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #888;     
+  border-radius: 3px;  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #FFF;
+  width: 100%;
+  height: 1980px;
+  display: flex;
+  justify-content: center;  
+}
+
+.container {
+  width: 1080px;
+  height: 1980px;
+  position: relative;
+}
+

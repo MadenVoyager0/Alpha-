@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, initial-scale=1.0">
+    <title>가상 촬영 UI</title>
+    <link rel="stylesheet" href="Interactive.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="Navi"></div>
+        <img src="Lineup/sony.png" alt="Sony logo" class="SonyLogo">
+        <a href="Main.html">
+        <img src="Lineup/home.png" alt="Home" class="Home">
+        </a>
+        <div class="button0"></div>
+
+        <a href="Lineup.html">
+         <p class="Text10">라인업</p>
+        </a>
+        <a href="Interactive.html">
+         <p class="Text11">인터랙티브</p>
+        </a>
+        <a href="Tech.html">
+         <p class="Text12">핵심기술</p>
+        </a>
+        <a href="Accessory.html">
+        <p class="Text13">악세서리</p>
+        </a>
+
+
+        <img class="Main" src="Interactive/main.png" alt="Main">
+        <img class="Shutter" src="Interactive/Shutter.png    " alt="Shutter">
+        <img class="Zoom" src="Interactive/Zoom.png" alt="Zoom">
+        <img class="W1" src="Interactive/W1.png" alt="W1">
+        <img class="W2" src="Interactive/W2.png" alt="W2">
+        <img class="W3" src="Interactive/W3.png" alt="W3">
+        <img class="W4" src="Interactive/W4.png" alt="W4">
+        <img class="S1" src="Interactive/S1.png" alt="S1">
+        <img class="S2" src="Interactive/S2.png" alt="S2">
+        <img class="S3" src="Interactive/S3.png" alt="S3">
+
+
+        <div class="button"></div>
+        <div class="button1"></div>
+        <div class="button2"></div>
+        <div class="button3"></div>
+
+        <div class="Bar1"></div>
+        <div class="Bar2"></div>
+        <div class="Bar3"></div>
+        <div class="Bar4"></div>
+
+        <div class="Text1">가상촬영</div>
+        <div class="Text2">MF</div>
+        <div class="Text3">IOS</div>
+        <div class="Text4">셔터스피드</div>
+        <div class="Text5">화이트밸런스</div>
+        <div class="Text6">촬영사진</div>
+        <div class="Text7">맑은</div>
+        <div class="Text8">흐린</div>
+        <div class="Text9">주광</div>
+        <div class="TextA">-3..2..1..0..1..2..3 +</div>
+        <div class="TextB">-3..2..1..0..1..2..3 +</div>
+        <div class="TextC">100</div>
+        <div class="TextD">32,000</div>
+        <div class="TextE">1/8000</div>
+    </div>
+
+<script>
+  const mainImage = document.querySelector('.Main');
+  const button1 = document.querySelector('.button1');
+  const button2 = document.querySelector('.button2');
+  const button3 = document.querySelector('.button3');
+
+  const wbClear = document.querySelector('.W1');  // 맑은
+  const wbCloudy = document.querySelector('.W2'); // 흐린
+  const wbDaylight = document.querySelector('.W3'); // 주광
+
+  //  저장용
+  let blurValue1 = 0;
+  let blurValue3 = 0;
+  let brightnessValue = 1;
+  let hueRotateValue = 0; // 화이트밸런스 기본값
+
+
+  function updateFilter() {
+    const totalBlur = blurValue1 + blurValue3;
+    mainImage.style.filter = `blur(${totalBlur}px) brightness(${brightnessValue}) hue-rotate(${hueRotateValue}deg)`;
+  }
+
+
+  function setupSlider(button, onUpdate) {
+    let isDragging = false;
+    let startX = 0;
+    let initialLeft = 0;
+
+    button.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      startX = e.clientX;
+      initialLeft = parseInt(window.getComputedStyle(button).left, 10);
+      button.style.cursor = 'grabbing';
+    });
+
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+      button.style.cursor = 'grab';
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+
+      const deltaX = e.clientX - startX;
+      let newLeft = initialLeft + deltaX;
+      newLeft = Math.max(115, Math.min(900, newLeft));
+      button.style.left = `${newLeft}px`;
+
+      onUpdate(newLeft);
+      updateFilter();
+    });
+  }
+
+
+  setupSlider(button1, (x) => {
+    blurValue1 = ((x - 100) / 500) * 5;
+  });
+
+  setupSlider(button2, (x) => {
+    brightnessValue = 0.5 + ((x - 100) / 500);
+  });
+
+  setupSlider(button3, (x) => {
+    blurValue3 = 5 - ((x - 100) / 500) * 5;
+  });
+
+
+  wbClear.addEventListener('click', () => {
+    hueRotateValue = 0; // 맑은
+    updateFilter();
+  });
+
+  wbCloudy.addEventListener('click', () => {
+    hueRotateValue = 220; // 흐린
+    updateFilter();
+  });
+
+  wbDaylight.addEventListener('click', () => {
+    hueRotateValue = 40; // 주광
+    updateFilter();
+  });
+
+
+  let timeout;
+
+  function resetTimer() {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      window.location.href = 'index.html';
+    }, 15000);
+  }
+
+  ['mousemove', 'mousedown', 'keydown', 'touchstart'].forEach(evt => {
+    document.addEventListener(evt, resetTimer);
+  });
+
+  resetTimer();
+
+  const shutterButton = document.querySelector('.Shutter');
+const s1 = document.querySelector('.S1');
+const s2 = document.querySelector('.S2');
+const s3 = document.querySelector('.S3');
+
+let shotHistory = [];
+
+
+shutterButton.addEventListener('click', () => {
+  const src = mainImage.getAttribute('src');
+  const filter = mainImage.style.filter;
+
+
+  const newShot = {
+    src: src,
+    filter: filter
+  };
+
+
+  shotHistory.unshift(newShot);
+
+
+  if (shotHistory.length > 3) shotHistory.pop();
+
+
+  if (shotHistory[0]) {
+    s1.src = shotHistory[0].src;
+    s1.style.filter = shotHistory[0].filter;
+    s1.style.objectFit = 'cover';
+  }
+  if (shotHistory[1]) {
+    s2.src = shotHistory[1].src;
+    s2.style.filter = shotHistory[1].filter;
+    s2.style.objectFit = 'cover';
+  }
+  if (shotHistory[2]) {
+    s3.src = shotHistory[2].src;
+    s3.style.filter = shotHistory[2].filter;
+    s3.style.objectFit = 'cover';
+  }
+});
+
+
+</script>
+
+</body>
+</html>

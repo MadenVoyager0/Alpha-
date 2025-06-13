@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, initial-scale=1.0">
+    <title>Sony Alpha UI</title>
+    <link rel="stylesheet" href="A.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+</head>
+<body>
+  <div class="Navi"></div>
+  <img src="Lineup/sony.png" alt="Sony logo" class="SonyLogo">
+  <a href="Main.html">
+  <img src="Lineup/home.png" alt="Home" class="Home">
+  </a>
+  <div class="button0"></div>
+
+  <a href="Lineup.html">
+   <p class="Text10">라인업</p>
+  </a>
+  <a href="Interactive.html">
+   <p class="Text11">인터랙티브</p>
+  </a>
+  <a href="Tech.html">
+   <p class="Text12">핵심기술</p>
+  </a>
+  <a href="Accessory.html">
+  <p class="Text13">악세서리</p>
+  </a>
+
+  <div class="Main"><img src="A/A7.png" alt="Main Image" /></div>
+  <div class="logo"><img src="A/A7logo.png" alt="Logo" /></div>
+  <div class="S1"><img src="A/S1.png" alt="S1 Image" /></div>
+  <div class="S2"><img src="A/S2.png" alt="S2 Image" /></div>
+ <a href="C.html">
+  <div class="L"><img src="A/L.png" alt="L Image" /></div>
+ </a>
+ <a href="B.html">
+  <div class="R"><img src="A/R.png" alt="R Image" /></div>
+ </a>
+
+  <div class="Text">빛나는 또 한번의 진화</div>
+
+  <div class="Text1">
+        α7S III는 1200만 화소 센서와 빠른 AF, 4K 120p 촬영으로<br />
+        저조도 환경에 강한 영상 제작자용 카메라입니다.
+  </div>
+
+  <div class="Text2">
+        해상도<br /><br />
+        연속 촬영 속도<br /><br />
+        프로세서 & 이미지 처리 엔진
+  </div>
+
+  <div class="Text2a">
+        연속 촬영 부스트<br /><br />
+        손떨림 보정<br /><br />
+        배터리 성능
+  </div>
+
+  <div class="Text3">
+        12.1MP<br /><br />
+        최대 10fps<br /><br />
+        Dual BIONZ XR 프로세서 탑
+  </div>
+
+  <div class="Text3a">
+        순간 속도 조절 기능 없음<br /><br />
+        최대 5.5스톱 5축 IBIS 내장<br /><br />
+        CIPA 기준 약 600장 이상<br />
+        (LCD 기준)
+   </div>
+</body>
+ <script>
+    let timeout;
+
+    function resetTimer() {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        window.location.href = 'index.html'; 
+      }, 15000); // 
+    }
+
+    ['mousemove', 'mousedown', 'keydown', 'touchstart'].forEach(evt => {
+      document.addEventListener(evt, resetTimer);
+    });
+
+    resetTimer();
+ </script>
+</html>

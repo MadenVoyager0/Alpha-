@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, initial-scale=1.0">
+    <title>Sony Alpha UI</title>
+    <link rel="stylesheet" href="Lineup.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="Navi"></div>
+        <img src="Lineup/sony.png" alt="Sony logo" class="SonyLogo">
+        <a href="Main.html">
+        <img src="Lineup/home.png" alt="Home" class="Home">
+        </a>
+        <div class="button1"></div>
+
+        <a href="Lineup.html">
+         <p class="Text10">라인업</p>
+        </a>
+        <a href="Interactive.html">
+         <p class="Text11">인터랙티브</p>
+        </a>
+        <a href="Tech.html">
+         <p class="Text12">핵심기술</p>
+        </a>
+        <a href="Accessory.html">
+        <p class="Text13">악세서리</p>
+        </a>
+
+
+        <h1 class="Text1">라인업</h1>
+        <p class="Text2">​알파 시리즈는 혁신적인 미러리스 기술과 뛰어난 성능으로<br>
+        다양한 촬영 분야의 요구를 충족시키는 카메라 라인업입니다.</p>
+
+        <img src="Lineup/1.png" alt="1" class="img1">
+        <h2 class="Text3">​플래그쉽</h2>
+        <p class="Desc1">​사용자가 더 높은 캡처 성공률을 달성하는 데 필요한 모든 것을 제공합니다.</p>
+        <button class="Morebutton1" onclick="location.href='C.html'"></button>
+
+        <p class="Text8">자세히보기</p>
+
+        <img src="Lineup/2.png" alt="2" class="img2">
+        <h2 class="Text4">​영상특화</h2>
+        <p class="Desc2">​저노이즈, 4K 120p, 강력한 AF로 풀프레임 동영상 성능의 새로운 기준을 제시합니다.</p>
+        <button class="Morebutton2" onclick="location.href='A.html'"></button>
+        <p class="Text9a">자세히보기</p>
+
+        <img src="Lineup/3.png" alt="3" class="img3">
+        <h2 class="Text5">​고화소</h2>
+        <p class="Desc3">AI 기반의 첨단 자동 초점과 6100만 화소의  새로운 수준의 촬영 경험을 제공합니다.</p>
+        <button class="Morebutton3"onclick="location.href='B.html'"></button>
+        <p class="Text9b">자세히보기</p>
+
+    </div>
+</body>
+  <script>
+    let timeout;
+
+    function resetTimer() {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        window.location.href = 'index.html'; 
+      }, 15000); // 
+    }
+
+    ['mousemove', 'mousedown', 'keydown', 'touchstart'].forEach(evt => {
+      document.addEventListener(evt, resetTimer);
+    });
+
+    resetTimer();
+  </script>
+</html>

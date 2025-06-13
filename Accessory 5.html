@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, initial-scale=1.0">
+    <title>Sony Alpha UI</title>
+    <link rel="stylesheet" href="Accessory 5.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+</head>
+<body>
+  <div class="Navi"></div>
+  <img src="Accessory/sony.png" alt="Sony logo" class="SonyLogo">
+  <a href="Main.html">
+  <img src="Lineup/home.png" alt="Home" class="Home">
+  </a>
+  <div class="button0"></div>
+
+  <a href="Lineup.html">
+   <p class="Text10">라인업</p>
+  </a>
+  <a href="Interactive.html">
+   <p class="Text11">인터랙티브</p>
+  </a>
+  <a href="Tech.html">
+   <p class="Text12">핵심기술</p>
+  </a>
+  <a href="Accessory.html">
+  <p class="Text13">악세서리</p>
+  </a>
+
+  <div class="Main"><img src="Accessory 5/2.png" alt="Main Image"></div>
+
+ <a href="Accessory 1.html">
+  <div class="img1"><img src="Accessory 5/1.png" alt="Image 1"></div>
+ </a>
+ <a href="Accessory.html">
+  <div class="img2"><img src="Accessory 5/2-1.png" alt="Image 2"></div>
+ </a>
+ <a href="Accessory 2.html">
+  <div class="img3"><img src="Accessory 5/3.png" alt="Image 3"></div>
+ </a>
+ <a href="Accessory 3.html">
+  <div class="img4"><img src="Accessory 5/4.png" alt="Image 4"></div>
+ </a>
+ <a href="Accessory 5.html">
+  <div class="img5"><img src="Accessory 5/5.png" alt="Image 5"></div>
+ </a>
+ <a href="Accessory 4.html">
+  <div class="img6"><img src="Accessory 5/6.png" alt="Image 6"></div>
+ </a>
+ <a href="Accessory 6.html">
+  <div class="img7"><img src="Accessory 5/7.png" alt="Image 7"></div>
+ </a>
+
+  <div class="Text1">GP-X2 확장 그립 </div>
+  <div class="Text2">치수</div>
+  <div class="Text2b">무게</div>
+  <div class="Text3">약 124.0 x 23.3 x 57.2mm</div>
+  <div class="Text3b">75g</div>
+  <div class="Text4">
+  ILCE-7CR 및 ILCE-7C2 확장 그립 ILCE-7CR 패키지에 제공되는 것과 동일함으로, 세로그립과 셔터 버튼으로 세로 촬영에 최적화된 액세서리입니다.
+  </div>
+</body>
+ <script>
+    let timeout;
+
+    function resetTimer() {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        window.location.href = 'index.html'; 
+      }, 15000); // 
+    }
+
+    ['mousemove', 'mousedown', 'keydown', 'touchstart'].forEach(evt => {
+      document.addEventListener(evt, resetTimer);
+    });
+
+    resetTimer();
+ </script>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, initial-scale=1.0">
+    <title>Sony Alpha UI</title>
+    <link rel="stylesheet" href="C.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+</head>
+<body>
+  <div class="Navi"></div>
+  <img src="Lineup/sony.png" alt="Sony logo" class="SonyLogo">
+  <a href="Main.html">
+  <img src="Lineup/home.png" alt="Home" class="Home">
+  </a>
+  <div class="button0"></div>
+
+  <a href="Lineup.html">
+   <p class="Text10">라인업</p>
+  </a>
+  <a href="Interactive.html">
+   <p class="Text11">인터랙티브</p>
+  </a>
+  <a href="Tech.html">
+   <p class="Text12">핵심기술</p>
+  </a>
+  <a href="Accessory.html">
+  <p class="Text13">악세서리</p>
+  </a>
+
+  <div class="Main"><img src="C/A7.png" alt="Main Image" /></div>
+  <div class="logo"><img src="C/A7logo.png" alt="Logo" /></div>
+  <div class="S1"><img src="C/S1.png" alt="S1 Image" /></div>
+  <div class="S2"><img src="C/S2.png" alt="S2 Image" /></div>
+ <a href="B.html">
+  <div class="L"><img src="A/L.png" alt="L Image" /></div>
+ </a>
+ <a href="A.html">
+  <div class="R"><img src="A/R.png" alt="R Image" /></div>
+ </a>
+  <div class="Text">정상에서 또 한 번의 도약</div>
+
+  <div class="Text1">
+        α1 는 50MP 고해상도, AI 인식 AF, 고속 연사, <br />
+        고급 워크플로우로 캡처 성공률과 작업 효율을 극대화합니다.
+  </div>
+
+  <div class="Text2">
+        해상도<br /><br />
+        연속 촬영 속도<br /><br />
+        AF/AE 계산<br /><br />
+        사전 캡처
+  </div>
+
+  <div class="Text2a">
+        연속 촬영 부스트<br /><br />
+        손떨림 보정<br /><br />
+        LCD 모니터
+  </div>
+
+  <div class="Text3">
+        50.1MP<br /><br />
+        최대 30fps<br /><br />
+        초당 120회<br /><br />
+        최대 30fps 
+
+  </div>
+
+  <div class="Text3a">
+        순간 속도 조절 기능 없음<br /><br />
+        최대 5.5스톱 5축 IBIS 내장<br /><br />        
+   </div>
+
+   <div class="Text3b">
+           4축 멀티 앵글<br />
+        수평·수직 조정<br /> 아래 40도, 위 98도<br />
+        측면 180도 회전<br />
+   </div>
+   
+</body>
+ <script>
+    let timeout;
+
+    function resetTimer() {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        window.location.href = 'index.html'; 
+      }, 15000); // 
+    }
+
+    ['mousemove', 'mousedown', 'keydown', 'touchstart'].forEach(evt => {
+      document.addEventListener(evt, resetTimer);
+    });
+
+    resetTimer();
+ </script>
+</html>

@@ -1,0 +1,286 @@
+* {
+  font-family: "Pretendard Variable", pretendard, system-ui, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html {
+    background-color: #000000; 
+}
+
+.Navi {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1080px;
+    height: 237px;
+    background: #1E1E1E;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.SonyLogo {
+    position: absolute;
+    top: 49px;
+    left: 444px;
+    width: 193px;
+    height: 34px;
+}
+.Home {
+    position: absolute;
+    top: 37px;
+    left: 947px;
+    width: 74px;
+    height: 75px;
+}
+.button0 {
+    position: absolute;
+    top: 141px;
+    left: 296px;
+    width: 254px;
+    height: 76px;
+    background: #FFFFFF;
+    border-radius: 30px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+    width: 1080px;
+    height: 1980px;
+    font-family: 'Pretendard', sans-serif;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    width: 1080px;
+    height: 1980px;
+}
+
+.Main { position: absolute; top: 374px; left: 110px; }
+.Shutter { position: absolute; top: 748px; left: 504px; }
+.Zoom { position: absolute; top: 398px; left: 467px; }
+.W1 { position: absolute; top: 1379px; left: 110px; }
+.W2 { position: absolute; top: 1379px; left: 343px; }
+.W3 { position: absolute; top: 1379px; left: 576px; }
+.W4 { position: absolute; top: 1379px; left: 809px; }
+.S1 { position: absolute; top: 1613px; left: 110px; }
+.S2 { position: absolute; top: 1613px; left: 401px; }
+.S3 { 
+    position: absolute;
+    top: 1613px;
+    left: 693px;
+    width: 277px;
+    height: 284px;
+    border-radius: 20px; 
+    overflow: hidden; 
+}
+
+
+.button {
+    position: absolute; top: 861.5px; left: 527px;
+    width: 28px; height: 17px; border-radius: 50px;
+    background: #474747;
+    z-index: 9999;
+}
+.button1, .button2, .button3 {
+    width: 57px; height: 44px; border-radius: 50px;
+    background: #474747; position: absolute;
+    z-index: 9999;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.button1 { top: 993px; left: 116px; }
+.button2 { top: 1115px; left: 116px; }
+.button3 { top: 1249px; left: 116px; }
+
+.Bar1 {
+    position: absolute; top: 855px; left: 110px;
+    width: 860px; height: 65px; border-radius: 20px;
+    background: #D9D9D9;
+}
+.Bar2 {
+    position: absolute; top: 986px; left: 110px;
+    width: 860px; height: 58px; border-radius: 37px;
+    background: #D9D9D9;
+}
+.Bar3 {
+    position: absolute; top: 1108px; left: 110px;
+    width: 860px; height: 58px; border-radius: 37px;
+    background: #D9D9D9;
+}
+.Bar4 {
+    position: absolute; top: 1242px; left: 110px;
+    width: 860px; height: 58px; border-radius: 37px;
+    background: #D9D9D9;
+}
+
+.Text1 {
+    position: absolute; top: 290px; left: 110px;
+    font-size: 56px; font-weight: bold; color: #000000;
+}
+.Text2 {
+    position: absolute; top: 936px; left: 110px;
+    font-size: 35px; font-weight: bold; color: #000000;
+}
+.Text3 {
+    position: absolute; top: 1057px; left: 110px;
+    font-size: 35px; font-weight: bold; color: #000000;
+}
+.Text4 {
+    position: absolute; top: 1187px; left: 110px;
+    font-size: 35px; font-weight: bold; color: #000000;
+}
+.Text5 {
+    position: absolute; top: 1321px; left: 110px;
+    font-size: 35px; font-weight: bold; color: #000000;
+}
+.Text6 {
+    position: absolute; top: 1556px; left: 110px;
+    font-size: 35px; font-weight: bold; color: #000000;
+}
+.Text7 {
+    position: absolute; top: 1441px; left: 194px;
+    font-size: 30px; font-weight: bold; color: #FFFFFF;
+}
+.Text8 {
+    position: absolute; top: 1441px; left: 429px;
+    font-size: 30px; font-weight: bold; color: #FFFFFF;
+}
+.Text9 {
+    position: absolute; top: 1441px; left: 660px;
+    font-size: 30px; font-weight: bold; color: #FFFFFF;
+}
+
+.TextA {
+  position: absolute;
+  top: 889px;
+  left: 137px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #000000;
+  letter-spacing: 1.56em; 
+  opacity: 0.6;
+}
+
+.TextB {
+    position: absolute; top: 998px; left: 148px;
+    font-size: 26px; font-weight: 300; color: #000000;
+    letter-spacing: 1.06em; opacity: 0.6;
+}
+.TextC {
+    position: absolute; top: 1119px; left: 128px;
+    font-size: 30px; color: #000000; opacity: 0.6;
+}
+.TextD {
+    position: absolute; top: 1119px; left: 839px;
+    font-size: 30px; color: #000000; opacity: 0.6;
+}
+.TextE {
+    position: absolute; top: 1253px; left: 846px;
+    font-size: 30px; color: #000000; opacity: 0.6;
+}
+
+.Text11 {
+    position: absolute;
+    top: 120px;
+    left: 345px;
+    font-size: 35px;
+    font-weight: 500;
+    z-index: 9999;
+    color: #000000
+}
+
+.Text10, .Text12, .Text13 {
+    position: absolute;
+    font-size: 35px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+.Text10 { top: 120px; left: 89px; }
+.Text12 { top: 120px; left: 638px; }
+.Text13 { top: 120px; left: 898px; }
+
+.Text10 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.Text10:hover {
+  filter: brightness(50%);
+}
+
+.Text11 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.Text11:hover {
+  filter: brightness(50%);
+}
+
+.Text12 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.Text12:hover {
+  filter: brightness(50%);
+}
+
+.Text13 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.Text13:hover {
+  filter: brightness(50%);
+}
+
+.Home {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.Home:hover {
+  filter: brightness(50%);
+}
+
+.Main {
+  transition: filter 0.1s ease;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  width: 100%;
+  height: 1980px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1080px;
+  height: 1980px;
+  position: relative;
+}   
+
+.Main {
+  transition: filter 0.2s ease;
+}
+
+.W1, .W2, .W3 {
+  cursor: pointer;
+}
+
+.Shutter:active {
+  transform: scale(0.95);
+  filter: brightness(80%);
+}
+
+.S1, .S2, .S3 {
+  object-fit: cover;
+  width: 277px;   
+  height: 284px;
+  border-radius: 20px;
+  transition: filter 0.2s;
+}
